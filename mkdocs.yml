@@ -1,0 +1,30 @@
+site_name: Oferta Académica UTPL
+site_url: https://universidad-username.github.io/oferta
+site_description: Portal oficial de carreras y facultades de la UTPL.
+site_author: Universidad Técnica Particular de Loja
+
+theme:
+  name: material
+  language: es
+  palette:
+    # Configuración de colores institucionales
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo # Azul cercano al institucional
+      accent: amber   # Dorado para resaltar
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Inicio: index.md
+  - Ciencias Económicas: economicas.md
+  - Ingenierías y Arquitectura: ingenierias.md
+  - Ciencias Sociales y Humanidades: sociales.md
+  - Ciencias de la Salud: salud.md
+
+# Evutar Errores 
+plugins:
+  - search
